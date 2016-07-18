@@ -1,0 +1,148 @@
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Colors
+# Elements
+# Nav
+# Content
+# Footer    
+
+/*--------------------------------------------------------------
+# Colors
+--------------------------------------------------------------*/
+.CBP-gray {
+	color: #4b4b4b;
+}
+.CBP-white {
+	color: #fff;
+}
+/*--------------------------------------------------------------
+# Elements
+--------------------------------------------------------------*/
+img {
+	width: 100%;
+	height: auto;
+}
+body {
+	padding: 0;
+	margin: 0;
+}
+button {
+	border: 0;
+}
+
+section {
+	width: 100%;
+	margin: 40px 0;
+	display: flex;
+	justify-content: center;
+}
+h2 {
+	text-align: center;
+	font-weight: bold;
+	font-family: serif;
+	font-style: italic;
+	color: #4b4b4b;
+}
+h4 {
+	font-size: 
+	font-weight: bold;
+	font-family: serif;
+	font-style: italic;
+	color: #4b4b4b;
+}
+p {
+	text-align: center;
+}
+
+/*--------------------------------------------------------------
+# Nav
+--------------------------------------------------------------*/
+nav {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row;
+}
+ul {
+	width: 90%;
+	text-align: center;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+li {
+	display: inline;
+	list-style-type: none;
+	font-size: 1.5em;
+	margin: 0 60px;
+}
+.logo {
+	width: auto;
+	height: 100%;
+    display: inline-block;
+}
+.contact-button {
+	background-color: transparent;
+	border: 1px solid #ddd;
+	color: #ddd;
+}
+
+/*--------------------------------------------------------------
+# Content
+--------------------------------------------------------------*/
+.main-container {
+	max-width: 1280px;
+	margin: 0 auto;
+}
+.CBP-container {
+	width: 50%;
+	margin: 0 auto;
+}
+.CBP-container h1 {
+	font-family: sans-serif;
+	font-weight: bold;
+	text-align: center;
+	font-size: 3em;
+}
+.CBP-container p {
+	margin: 30px 0;
+	text-align: center;
+	font-size: 1.2em;
+}
+.CBP-container button {
+	width: 40%;
+	height: 50px;
+	border-radius: 30px;
+	display: block;
+	margin: 0 auto;
+	font-size: 1.3em;
+}
+.container {
+	width: 47%;
+	padding: 20px;
+}
+
+.about-owner {
+	text-align: left;
+	font-size: 1.3em;
+}
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
