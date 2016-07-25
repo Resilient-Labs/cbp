@@ -51,8 +51,12 @@ h4 {
 	font-style: italic;
 	color: #4b4b4b;
 }
+h6 {
+	margin: 0;
+	font-size: .9em;
+	font-weight: lighter;
+}
 p {
-	text-align: center;
 }
 
 /*--------------------------------------------------------------
@@ -67,6 +71,7 @@ nav {
 }
 ul {
 	width: 90%;
+	padding: 0;
 	text-align: center;
 	display: flex;
     justify-content: center;
@@ -127,7 +132,95 @@ li {
 
 .about-owner {
 	text-align: left;
-	font-size: 1.3em;
+	font-size: 1.2em;
+}
+
+.package-container {
+	width: 50%;
+	float: left;
+	padding: 20px 0;
+}
+
+.package-container p {
+	text-align: left;
+	padding-right: 10px;
+	font-size: .9em;
+	font-weight: lighter;
+}
+
+.package-container button {
+	text-decoration-style: none;
+	width: 70px;
+	height: 20px;
+	border-radius: 30px;
+}
+.contact-us-container p {
+	text-align: left;
+}
+.text-center {
+	text-align: center;
+}
+.text-right {
+	text-align: right;
+}
+.text-left {
+	text-align: left;
+}
+
+
+@media (min-width: 0px) and (max-width: 480px) {
+	section {
+		display: block;
+	}
+	.CBP-container {
+	    width: 90%;
+	    margin: 0 auto;
+	}
+	.container {
+	    width: 90%;
+	    padding: 20px;
+	    margin: 0 auto;
+	}
+	ul {
+		display: block;
+		padding: 0;
+	}
+	h2	{
+		text-align: left;
+	}
+	.CBP-container p {
+	    text-align: left;
+	}
+}
+@media (min-width: 481px) and (max-width: 980px) {
+	section {
+		display: block;
+	}
+	.CBP-container {
+	    width: 90%;
+	    margin: 0 auto;
+	}
+	.container {
+	    width: 90%;
+	    padding: 20px;
+	    margin: 0 auto;
+	}
+	ul {
+		display: block;
+		padding: 0;
+	}
+	li {
+		width: 100%;
+	}
+	h2	{
+		text-align: left;
+	}
+	.CBP-container p {
+	    text-align: left;
+	}
+	.container p {
+		text-align: left;
+	}
 }
 /*--------------------------------------------------------------
 # Footer
