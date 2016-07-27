@@ -213,6 +213,10 @@ li {
 	.CBP-container p {
 	    text-align: left;
 	}
+	.package-container {
+	    width: 100%;
+	    padding: 20px 0;
+	}
 }
 @media (min-width: 481px) and (max-width: 980px) {
 	section {
@@ -242,6 +246,10 @@ li {
 	}
 	.container p {
 		text-align: left;
+	}
+	.package-container {
+	    width: 100%;
+	    padding: 20px 0;
 	}
 }
 /*--------------------------------------------------------------
