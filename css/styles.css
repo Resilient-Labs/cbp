@@ -16,6 +16,23 @@
 .CBP-white {
 	color: #fff;
 }
+
+.cbp-bg-color {
+	background : -moz-linear-gradient(0% 50% 0deg,rgba(138, 208, 195, 1) 0.56%,rgba(0, 182, 169, 1) 50%,rgba(0, 161, 133, 1) 100%);
+ background : -webkit-linear-gradient(0deg, rgba(138, 208, 195, 1) 0.56%, rgba(0, 182, 169, 1) 50%, rgba(0, 161, 133, 1) 100%);
+ background : -webkit-gradient(linear,0% 50% ,100% 50% ,color-stop(0.0056,rgba(138, 208, 195, 1) ),color-stop(0.5,rgba(0, 182, 169, 1) ),color-stop(1,rgba(0, 161, 133, 1) ));
+ background : -o-linear-gradient(0deg, rgba(138, 208, 195, 1) 0.56%, rgba(0, 182, 169, 1) 50%, rgba(0, 161, 133, 1) 100%);
+ background : -ms-linear-gradient(0deg, rgba(138, 208, 195, 1) 0.56%, rgba(0, 182, 169, 1) 50%, rgba(0, 161, 133, 1) 100%);
+ -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#8AD0C3 ', endColorstr='#00A185 ' ,GradientType=0)";
+ background : linear-gradient(90deg, rgba(138, 208, 195, 1) 0.56%, rgba(0, 182, 169, 1) 50%, rgba(0, 161, 133, 1) 100%);
+ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#8AD0C3 ',endColorstr='#00A185 ' , GradientType=1);
+}
+
+.cbp-color-yellow {
+	background-color: rgb(255,219,77);
+}
+
+
 /*--------------------------------------------------------------
 # Elements
 --------------------------------------------------------------*/
@@ -32,8 +49,8 @@ button {
 }
 
 section {
+	padding: 40px 0;
 	width: 100%;
-	margin: 40px 0;
 	display: flex;
 	justify-content: center;
 }
@@ -43,6 +60,7 @@ h2 {
 	font-family: serif;
 	font-style: italic;
 	color: #4b4b4b;
+	padding: 0 20px;
 }
 h4 {
 	font-size: 
@@ -50,13 +68,16 @@ h4 {
 	font-family: serif;
 	font-style: italic;
 	color: #4b4b4b;
+	padding: 0 20px;
 }
 h6 {
 	margin: 0;
 	font-size: .9em;
 	font-weight: lighter;
+	padding: 0 20px;
 }
 p {
+	padding: 0 20px;
 }
 
 /*--------------------------------------------------------------
@@ -74,7 +95,7 @@ ul {
 	padding: 0;
 	text-align: center;
 	display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
     flex-direction: row;
 }
@@ -99,6 +120,7 @@ li {
 # Content
 --------------------------------------------------------------*/
 .main-container {
+	width: 100%;
 	max-width: 1280px;
 	margin: 0 auto;
 }
@@ -126,19 +148,19 @@ li {
 	font-size: 1.3em;
 }
 .container {
-	width: 47%;
-	padding: 20px;
+	width: 50%;
 }
 
 .about-owner {
 	text-align: left;
 	font-size: 1.2em;
+	padding: 0 20px;
 }
 
 .package-container {
-	width: 50%;
+	width: 44%;
 	float: left;
-	padding: 20px 0;
+	padding: 3%;
 }
 
 .package-container p {
