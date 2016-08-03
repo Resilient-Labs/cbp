@@ -29,6 +29,9 @@
 .cbp-color-yellow {
 	background-color: rgb(255,219,77);
 }
+.cbp-color-text-yellow {
+	color: rgb(255,219,77);
+}
 .cbp-color-green {
 	color: rgb(0,161,133);
 }
@@ -47,12 +50,18 @@ body {
 button {
 	border: 0;
 }
-
+a {
+	text-decoration: none;
+	color: white;
+}
 section {
 	padding: 40px 0;
 	width: 100%;
 	display: flex;
 	justify-content: center;
+}
+p {
+	margin: 0 20px;
 }
 h2 {
 	text-align: center;
@@ -61,18 +70,22 @@ h2 {
 	font-style: italic;
 	font-size: 2.2em;
 	color: #4b4b4b;
+	margin: 0 20px;
+	padding: 20px 0;
 }
 h4 {
 	font-size: 
 	font-weight: bold;
 	font-family: serif;
 	font-style: italic;
-	color: #4b4b4b;
+	color: rgb(51,51,51);
+	margin: 20px 20px 10px 20px;
 }
 h6 {
 	margin: 0;
 	font-size: .9em;
 	font-weight: lighter;
+	margin: 0 20px;
 }
 
 /*--------------------------------------------------------------
@@ -104,11 +117,6 @@ li {
 	width: auto;
 	height: 100%;
     display: inline-block;
-}
-.contact-button {
-	background-color: transparent;
-	border: 1px solid #ddd;
-	color: #ddd;
 }
 
 /*--------------------------------------------------------------
@@ -143,19 +151,22 @@ li {
 	font-size: 1.8em;
 }
 .cbp-img-bg {
-	background-image: url(http://decoratinginsanity.com/wp-content/uploads/2016/02/are-you-a-responsible-dog-owner-blog.jpg);
+	background-image: url(../img/img1.png);
 	background-size: cover;
+	background-position: center; 
 }
 .cbp-img-one {
-	background-image: url(http://blog.sergeants.com/wp-content/uploads/2013/01/3601050192_061c8f1453_z.jpg);
+	background-image: url(../img/img3.png);
 	background-size: cover;
-	height: 500px;
+	height: 50%;
 	display: flex;
     justify-content: center;
-    align-items: flex-end;
+    align-items: center;
+    background-position: center;
 }
 .container {
 	width: 50%;
+	min-height: 720px;
 }
 .service-button {
 	display: block;
@@ -167,7 +178,7 @@ li {
 	background-color: transparent;
 	border: 1px solid rgb(255,219,77);
 	color: rgb(255,219,77);
-	margin-bottom: 20px;
+	margin-top: 20px;
 }
 .about-owner {
 	text-align: left;
@@ -182,7 +193,6 @@ li {
 
 .package-container p {
 	text-align: left;
-	padding-right: 10px;
 	font-size: .9em;
 	font-weight: lighter;
 }
@@ -191,6 +201,7 @@ li {
 	width: 70px;
 	height: 20px;
 	border-radius: 30px;
+	margin: 20px 0 0 20px;
 }
 .contact-us-container p {
 	text-align: left;
@@ -204,15 +215,33 @@ li {
 .text-left {
 	text-align: left;
 }
+.testimonial-container {
+	height: 50%;
+}
 .center-content {
 	width: 70%;
 	margin: 0 auto;
 }
-.container-padder {
-	padding: 20px;
-}
 .no-padding {
 	padding: 0;
+}
+.slider-container {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	width: 200px;
+	height: 30px;
+	margin: 10px auto;
+}
+.slider-container div {
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	border: 1px solid rgb(0,161,133);
+	float: left;
+}
+.border {
+	border: 2px solid green;
 }
 
 @media (min-width: 0px) and (max-width: 480px) {
@@ -225,8 +254,9 @@ li {
 	}
 	.container {
 	    width: 90%;
-	    padding: 20px;
+	    padding: 20px 0;
 	    margin: 0 auto;
+	    min-height: 0;
 	}
 	ul {
 		display: block;
@@ -240,10 +270,18 @@ li {
 	}
 	.package-container {
 	    width: 100%;
-	    padding: 20px 0;
 	}
 	.center-content {
 		width: 100%;
+	}
+	.service-button {
+		min-width: 70%;
+	}
+	.CBP-container button {
+		min-width: 70%;
+	}
+	.cbp-img-one {
+		min-height: 300px;
 	}
 }
 @media (min-width: 481px) and (max-width: 980px) {
@@ -256,7 +294,6 @@ li {
 	}
 	.container {
 	    width: 90%;
-	    padding: 20px;
 	    margin: 0 auto;
 	}
 	ul {
@@ -277,10 +314,18 @@ li {
 	}
 	.package-container {
 	    width: 100%;
-	    padding: 20px 0;
 	}
 	.center-content {
 		width: 100%;
+	}
+	.service-button {
+		min-width: 40%;
+	}
+	.CBP-container button {
+		min-width: 40%;
+	}
+	.cbp-img-one {
+		min-height: 300px;
 	}
 }
 /*--------------------------------------------------------------
