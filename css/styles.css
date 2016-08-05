@@ -10,21 +10,26 @@
 /*--------------------------------------------------------------
 # Colors
 --------------------------------------------------------------*/
+
+body {
+	margin: 0 auto;
+	background-color: #ffe;
+}
 .CBP-gray {
 	color: #4b4b4b;
 }
 .CBP-white {
 	color: #fff;
 }
-.cbp-bg-color {
+.cbp-bg-gradient {
 	background : -moz-linear-gradient(0% 50% 0deg,rgba(138, 208, 195, 1) 0.56%,rgba(0, 182, 169, 1) 50%,rgba(0, 161, 133, 1) 100%);
- background : -webkit-linear-gradient(0deg, rgba(138, 208, 195, 1) 0.56%, rgba(0, 182, 169, 1) 50%, rgba(0, 161, 133, 1) 100%);
- background : -webkit-gradient(linear,0% 50% ,100% 50% ,color-stop(0.0056,rgba(138, 208, 195, 1) ),color-stop(0.5,rgba(0, 182, 169, 1) ),color-stop(1,rgba(0, 161, 133, 1) ));
- background : -o-linear-gradient(0deg, rgba(138, 208, 195, 1) 0.56%, rgba(0, 182, 169, 1) 50%, rgba(0, 161, 133, 1) 100%);
- background : -ms-linear-gradient(0deg, rgba(138, 208, 195, 1) 0.56%, rgba(0, 182, 169, 1) 50%, rgba(0, 161, 133, 1) 100%);
- -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#8AD0C3 ', endColorstr='#00A185 ' ,GradientType=0)";
- background : linear-gradient(90deg, rgba(138, 208, 195, 1) 0.56%, rgba(0, 182, 169, 1) 50%, rgba(0, 161, 133, 1) 100%);
- filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#8AD0C3 ',endColorstr='#00A185 ' , GradientType=1);
+	background : -webkit-linear-gradient(0deg, rgba(138, 208, 195, 1) 0.56%, rgba(0, 182, 169, 1) 50%, rgba(0, 161, 133, 1) 100%);
+	background : -webkit-gradient(linear,0% 50% ,100% 50% ,color-stop(0.0056,rgba(138, 208, 195, 1) ),color-stop(0.5,rgba(0, 182, 169, 1) ),color-stop(1,rgba(0, 161, 133, 1) ));
+	background : -o-linear-gradient(0deg, rgba(138, 208, 195, 1) 0.56%, rgba(0, 182, 169, 1) 50%, rgba(0, 161, 133, 1) 100%);
+	background : -ms-linear-gradient(0deg, rgba(138, 208, 195, 1) 0.56%, rgba(0, 182, 169, 1) 50%, rgba(0, 161, 133, 1) 100%);
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#8AD0C3 ', endColorstr='#00A185 ' ,GradientType=0)";
+	background : linear-gradient(90deg, rgba(138, 208, 195, 1) 0.56%, rgba(0, 182, 169, 1) 50%, rgba(0, 161, 133, 1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#8AD0C3 ',endColorstr='#00A185 ' , GradientType=1);
 }
 .cbp-color-yellow {
 	background-color: rgb(255,219,77);
@@ -47,11 +52,31 @@ body {
 	padding: 0;
 	margin: 0;
 }
+
 button {
+	width: 40%;
+	height: 50px;
+	border-radius: 30px;
+	display: block;
+	margin: 0 auto;
+	font-size: 1.8em;
+	margin-top: 20px;
+	min-width: 300px;
+	background-color: rgb(255,219,77);
+	color: rgb(0, 161,133);
 	border: 0;
+	outline: none;
 }
+
+button:hover {
+	cursor: pointer;
+}
+
 a {
 	text-decoration: none;
+}
+
+li a {
 	color: white;
 }
 section {
@@ -62,7 +87,7 @@ section {
 }
 p {
 	margin: 0 20px;
-	font-family: 'roboto', sans-serif;
+	font-family: helvetica, Roboto, sans-serif;
 }
 h2 {
 	text-align: center;
@@ -81,10 +106,9 @@ h4 {
 	margin: 20px 20px 10px 20px;
 }
 h6 {
-	margin: 0;
-	font-size: .9em;
+	font-size: 1em;
 	font-weight: lighter;
-	margin: 0 20px;
+	margin: 10px 20px;
 }
 
 /*--------------------------------------------------------------
@@ -106,11 +130,7 @@ li {
 	list-style-type: none;
 	font-size: 1.5em;
 	margin: 0 60px;
-}
-.logo {
-	width: auto;
-	height: 100%;
-    display: inline-block;
+	font-family: helvetica, sans-serif;
 }
 
 /*--------------------------------------------------------------
@@ -136,27 +156,20 @@ li {
 	text-align: center;
 	font-size: 1.2em;
 }
-.CBP-container button {
-	width: 40%;
-	height: 50px;
-	border-radius: 30px;
-	display: block;
-	margin: 0 auto;
-	font-size: 1.8em;
-}
+
 .cbp-img-bg {
 	background-image: url(../img/img1.png);
 	background-size: cover;
-	background-position: center; 
+	background-position: center;
 }
 .cbp-img-one {
 	background-image: url(../img/img3.png);
 	background-size: cover;
 	height: 50%;
 	display: flex;
-    justify-content: center;
-    align-items: center;
-    background-position: center;
+	justify-content: center;
+	align-items: center;
+	background-position: center;
 }
 .container {
 	width: 50%;
@@ -165,7 +178,7 @@ li {
 .min-height-container {
 	min-height: 400px !important;
 }
-.service-button {
+/*.service-button {
 	display: block;
 	margin: 0 auto;
 	border-radius: 30px;
@@ -176,7 +189,8 @@ li {
 	border: 1px solid rgb(255,219,77);
 	color: rgb(255,219,77);
 	margin-top: 20px;
-}
+	min-width: 300px;
+}*/
 .about-owner {
 	text-align: left;
 	font-size: 1.2em;
@@ -199,6 +213,12 @@ li {
 	height: 20px;
 	border-radius: 30px;
 	margin: 20px 0 0 20px;
+	font-size: 15px;
+	color: white;
+	min-width: 70px;
+}
+.package-container button:hover {
+	cursor: default;
 }
 .contact-us-container p {
 	text-align: left;
@@ -246,14 +266,14 @@ li {
 		display: block;
 	}
 	.CBP-container {
-	    width: 90%;
-	    margin: 0 auto;
+		width: 90%;
+		margin: 0 auto;
 	}
 	.container {
-	    width: 90%;
-	    padding: 20px 0;
-	    margin: 0 auto;
-	    min-height: 0;
+		width: 90%;
+		padding: 20px 0;
+		margin: 0 auto;
+		min-height: 0;
 	}
 	ul {
 		display: block;
@@ -263,10 +283,10 @@ li {
 		text-align: left;
 	}
 	.CBP-container p {
-	    text-align: left;
+		text-align: left;
 	}
 	.package-container {
-	    width: 100%;
+		width: 100%;
 	}
 	.center-content {
 		width: 100%;
@@ -286,12 +306,12 @@ li {
 		display: block;
 	}
 	.CBP-container {
-	    width: 90%;
-	    margin: 0 auto;
+		width: 90%;
+		margin: 0 auto;
 	}
 	.container {
-	    width: 90%;
-	    margin: 0 auto;
+		width: 90%;
+		margin: 0 auto;
 	}
 	ul {
 		display: block;
@@ -304,13 +324,13 @@ li {
 		text-align: left;
 	}
 	.CBP-container p {
-	    text-align: left;
+		text-align: left;
 	}
 	.container p {
 		text-align: left;
 	}
 	.package-container {
-	    width: 100%;
+		width: 100%;
 	}
 	.center-content {
 		width: 100%;
@@ -328,24 +348,24 @@ li {
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
-	footer {
-		background-color: rgb(0,161,133);
-		color: white;
-		width: 100%;
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-		padding: 40px 0;
-	}
+footer {
+	background-color: rgb(0,161,133);
+	color: white;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 40px 0;
+}
 
-	footer p {
-		font-size: 1.2em;
-		margin: 0 40px;
-	}
-	footer li {
-		font-size: 1.2em;
-		margin: 0 40px 0 0;
-	}
+footer p {
+	font-size: 1.2em;
+	margin: 0 40px;
+}
+footer li {
+	font-size: 1.2em;
+	margin: 0 40px 0 0;
+}
 
 
 
